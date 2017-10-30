@@ -37,10 +37,13 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Below are images comparing the lane detection algorithm without extrapolation and with extrapolation:
 
-![Before Extrapolation](Uda-P1-LaneLines/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
-![After Extrapolation](Uda-P1-LaneLines/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
+![Before Extrapolation](https://github.com/MartinKan/Uda-P1-LaneLines/blob/master/test_images_output/whiteCarLaneSwitch_normal.jpeg)
 
+               *Without Extrapolation*
 
+![After Extrapolation](https://github.com/MartinKan/Uda-P1-LaneLines/blob/master/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
+
+                 *With Extrapolation*
 
 ### 2. Identify potential shortcomings with your current pipeline
 
