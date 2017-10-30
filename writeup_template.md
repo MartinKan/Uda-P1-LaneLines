@@ -37,24 +37,24 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 Below are images comparing the lane detection algorithm without extrapolation and with extrapolation:
 
-![Before Extrapolation](https://github.com/MartinKan/Uda-P1-LaneLines/blob/master/test_images_output/whiteCarLaneSwitch_normal.jpeg)
+![Before Extrapolation](test_images_output/whiteCarLaneSwitch_normal.jpeg)
 
-               *Without Extrapolation*
+*Without Extrapolation*
 
-![After Extrapolation](https://github.com/MartinKan/Uda-P1-LaneLines/blob/master/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
+![After Extrapolation](test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
 
-                 *With Extrapolation*
+*With Extrapolation*
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming on my current pipeline would be what would happen when detecting lanes under strong sunlight.  In the Challenge video, the current settings I have for the Canny Edge Detection does not allow lane lines to be easily captured under strong sunlight.  This resulted in some deviations between my extrapolated lane line and the actual lane line in the video stream.
 
-Another shortcoming could be ...
+Another shortcoming would be the expensive cost of running a recursive function over a sizeable number of detected lines.  This may have caused my code to run slower than usual.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to allow the pipeline to better detect lane lines under strong sunlight.  This is not a matter of simply adjusting the parameters for the Canny Edge Detection - it requires optimizing other parts of the code as well to make it faster to run and less prone to errors.
 
-Another potential improvement could be to ...
+Another potential improvement could be to optimize the recursive function to make it faster to run.
