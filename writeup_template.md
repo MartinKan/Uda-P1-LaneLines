@@ -35,9 +35,11 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 2.  (Find most dominant path) - I created a recursive function to detect the most dominant (or longest) path for both the right lane and the left lane.  Using the 2 separate line tables I created above, my code iterates through each line to find the longest path that it could create (meeting prescribed gradient and distance criteria).  The most dominant path is tracked during the recursive process and returned at the end 
 3.  (Extrapolation) - Once the most dominant paths for both the right lane and left lane are known, I extrapolate them into one single line for each lane by first computing a single line that provides the best fit on all of the coordinates of the dominant path, and then run the line through a smoothing function that tracks the running mean of the start and end coordinates of the previous best fit lines.  The end result is one single line to mark each lane that transitions smoothly from frame to frame
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Below are images comparing the lane detection algorithm without extrapolation and with extrapolation:
 
-![alt text][image1]
+![Before Extrapolation](Uda-P1-LaneLines/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
+![After Extrapolation](Uda-P1-LaneLines/test_images_output/whiteCarLaneSwitch_extrapolated.jpeg)
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
